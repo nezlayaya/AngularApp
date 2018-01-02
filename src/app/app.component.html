@@ -1,10 +1,15 @@
-<div class="container">
-  <div class="row">
-    <app-user></app-user>
-    <app-user></app-user>
-    <app-user></app-user>
-    <app-user></app-user>
-    <app-user></app-user>
+<nav>
+  <div class="nav-wrapper">
+    <div class="container">
+      <a href="#" class="brand-logo">Logo</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a routerLink="/registration">Регистрация</a></li>
+        <li><a routerLink="/authorization">Авторизация</a></li>
+      </ul>
+    </div>
   </div>
-</div>
+</nav>
 
+<div class="container">
+  <router-outlet class="col s12"></router-outlet>
+</div>
