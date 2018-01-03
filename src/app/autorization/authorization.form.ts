@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {Http} from '@angular/http';
 
 @Component({
   selector: 'app-authorization',
@@ -7,9 +8,14 @@ import {Component, OnInit} from '@angular/core';
 })
 
 export class AuthorizationComponent implements OnInit {
-  constructor() { }
+  constructor(
+    public http: Http
+  ) { }
 
   ngOnInit() {
+    this.http.get('').subscribe(data => {
+      console.log(data);
+    });
   }
 
   onSubmit(form: any): void {
