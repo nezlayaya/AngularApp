@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Http} from '@angular/http';
+import {Observable} from "rxjs/Observable";
 
 @Component({
   selector: 'app-authorization',
@@ -8,14 +9,18 @@ import {Http} from '@angular/http';
 })
 
 export class AuthorizationComponent implements OnInit {
-  constructor(
-    public http: Http
-  ) { }
+  constructor(public http: Http) {
+  }
+
+  getJSON() {
+    this.http.get('./names.json')
+      .subscribe((res: any) => {
+        console.log(res);
+      });
+  }
 
   ngOnInit() {
-    this.http.get('').subscribe(data => {
-      console.log(data);
-    });
+    this.getJSON();
   }
 
   onSubmit(form: any): void {

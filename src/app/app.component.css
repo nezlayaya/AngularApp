@@ -1,0 +1,21 @@
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+nav .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav {
+  background-color: darkgrey;
+}
+nav a{
+  color: #fff;
+}
+nav ul{
+  display: flex;
+}
+nav ul li:not(:last-child){
+  margin: 0 15px 0 0;
+}

@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('app/app.component.css');
+@import url('app/autorization/authorization.css');
+@import url('app/registration/registration.form.css');
+@import url('fonts.css');
+
+body{
+  margin: 0;
+  font: 16px 'montserratlight';
+}
+a{
+  text-decoration: none;
+}
+ul li{
+  list-style: none;
+}

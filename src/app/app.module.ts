@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {HttpModule} from "@angular/http";
 import { AppComponent } from './app.component';
 import {RegistrationComponent} from './registration/registration.form';
 import {RouterModule} from '@angular/router';
@@ -25,6 +25,7 @@ const routes = [
     BrowserModule,
     RouterModule.forRoot(routes),
     FormsModule,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
