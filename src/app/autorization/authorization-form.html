@@ -1,5 +1,5 @@
 <div class="container">
-  <form #myForm="ngForm" name="registrationForm" (ngSubmit)="onSubmit()">
+  <form #myForm="ngForm" name="authorizationForm" (ngSubmit)="onSubmit()">
     <div class="form-group">
       <label>Телефон</label>
       <input class="form-control" name="phone" ngModel required pattern="[0-9+)(-]{9,17}" />

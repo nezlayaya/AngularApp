@@ -1,0 +1,42 @@
+$buttonColor: #4CAF50;
+
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+nav .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav {
+  background-color: cadetblue;
+}
+nav a{
+  color: #fff;
+}
+nav ul{
+  display: flex;
+}
+nav ul li:not(:last-child){
+  margin: 0 15px 0 0;
+}
+
+form{
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 90px 0 0 0;
+  div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 0 0 0;
+    &:last-child input{
+      height: 30px;
+      color: #fff;
+      background-color: $buttonColor;
+      border: none;
+    }
+  }
+}
