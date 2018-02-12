@@ -2,16 +2,23 @@
   max-width: 1200px;
   margin: 0 auto; }
 
+h2 {
+  text-align: center;
+  color: #575C63; }
+
 nav .container {
   display: flex;
   justify-content: space-between;
   align-items: center; }
 
 nav {
-  background-color: cadetblue; }
+  background-color: #1F2122; }
 
 nav a {
-  color: #fff; }
+  color: #F0F1F3;
+  font-family: montserrat_alternatessemibold;
+  transition: all 0.45s;
+  padding: .75rem 0; }
 
 nav ul {
   display: flex; }
@@ -19,19 +26,42 @@ nav ul {
 nav ul li:not(:last-child) {
   margin: 0 15px 0 0; }
 
+nav ul li:hover a {
+  color: #AFC0D7; }
+
 form {
   max-width: 500px;
-  margin: 0 auto;
-  padding: 90px 0 0 0; }
+  margin: 0 auto; }
   form div {
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding: 20px 0 0 0; }
+    form div input {
+      border-radius: 6px;
+      border: 1px solid #eee;
+      outline: none;
+      padding: 8px 5px;
+      margin: 5px 0; }
     form div:last-child input {
-      height: 30px;
-      color: #fff;
-      background-color: #4CAF50;
-      border: none; }
+      height: 40px;
+      color: #F0F1F3;
+      background-color: #575C63;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      font: 16px montserrat_alternatessemibold; }
+
+ul li {
+  display: inline;
+  text-align: center; }
+
+a {
+  display: inline-block;
+  width: 25%;
+  padding: .75rem 0;
+  margin: 0;
+  text-decoration: none;
+  color: #333; }
 
 /*# sourceMappingURL=app.component.css.map */
